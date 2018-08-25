@@ -66,7 +66,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Barlow', sans-serif !important;
 }
 img {
-    height: 64px;
+    height: 76px;
 }
 .text-left {
     text-align: left;
@@ -95,7 +95,7 @@ img {
     border-radius: 0;
 }
 .navbar-header {
-    margin-top: 20px;
+    margin-top: 6px;
 }
 .navigation a:hover, .navigation a.active {
     color: #007d3b;
@@ -1343,6 +1343,7 @@ hr.style18 {
 }
  .topbar a {
     color: #fff;
+    font-weight: 500;
 }
  .topbar a:hover {
     opacity: 0.65;
@@ -1355,6 +1356,7 @@ hr.style18 {
     display: inline-block;
     list-style: none;
     margin-right: 10px;
+    font-size: 18px;
 }
  .topbar.black {
     background-color: #333;
