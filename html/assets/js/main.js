@@ -479,5 +479,51 @@
 
     //dom ready end
 
-
+    
+    // Delivery form script
+    $(document).ready(function() {
+        if ($("#needStore").prop("checked", true)) {
+            $(".move-delivery").hide();
+        }
+        $('.needStoreBlock').on('click', function(){
+            $(".move-delivery").hide();
+            $(".store-delivery").show();
+        });
+        $('.needMoveBlock').on('click', function(){
+            $(".move-delivery").show();
+            $(".store-delivery").hide();
+        });
+        $('.bothMoveBlock').on('click', function(){
+            $(".move-delivery").show();
+            $(".store-delivery").hide();
+            $("#divStoreLocationChoice").show();
+        });
+    });
+    // Delivery form script end
+    
+    var formMessages = $('.form-alert-message');
+	document.getElementById('feedback-form').addEventListener('submit', function(evt){
+	  var http = new XMLHttpRequest();
+      var f = this;
+      evt.preventDefault();
+      http.open("POST", "https://customemb.000webhostapp.com/mail.php", true);
+      http.onreadystatechange = function() {
+        if (http.readyState == 4 && http.status == 200) {
+            //alert(http.responseText);
+            $(formMessages).removeClass('hidden');
+            $(formMessages).removeClass('alert-danger');
+            $(formMessages).addClass('alert-success');
+            $(formMessages).text('Thank You! Your message has been sent.');
+            $(".contact-form input").val("");
+            $(".contact-form input.submit-btn").val("Submit");
+        }
+      }
+      http.onerror = function() {
+          $(formMessages).removeClass('hidden');
+          $(formMessages).addClass('alert-danger');
+          $(formMessages).text('Oops! An error occured and your message could not be sent.');
+      }
+      http.send(new FormData(f));
+    }, false);
+    
 })(jQuery);

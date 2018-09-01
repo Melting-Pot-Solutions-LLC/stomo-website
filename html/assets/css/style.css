@@ -4197,3 +4197,216 @@ label {
     font-size: 30px;
     padding: 20px 25px;
 }
+.about-us-block span {
+    text-transform: lowercase;
+    margin-bottom: 26px;
+    display: block;
+}
+.bookingWidget {
+    margin-top: 0;
+    margin-bottom: 24px;
+    margin-bottom: 1.6rem;
+}
+.bookingWidget hgroup, .islet ul, .bookingWidget ul, .islet ol, .bookingWidget ol, .islet dl, .bookingWidget dl, .islet blockquote, .bookingWidget blockquote, .islet p, .bookingWidget p, .islet address, .bookingWidget address, .islet .wrap table, .bookingWidget .wrap table, .islet main table, .bookingWidget main table, .islet #main-footer table, .bookingWidget #main-footer table, .islet .homeTopBlock-container table, .bookingWidget .homeTopBlock-container table, .islet fieldset, .bookingWidget fieldset, .islet figure, .bookingWidget figure, .islet pre, .bookingWidget pre, .islet .island, .bookingWidget .island, .islet .islet, .bookingWidget .islet, .islet .bookingWidget, .bookingWidget .bookingWidget {
+    margin-bottom: 12px;
+    margin-bottom: .8rem;
+}
+.bookingWidget:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.bookingWidget > *:last-child, .bookingWidget > *:last-child > *:last-child, .bookingWidget > *:last-child > *:last-child > *:last-child {
+    margin-bottom: 0 !important;
+}
+.islet, .bookingWidget {
+    padding: 12px;
+}
+.island--border, .islet--border, .bookingWidget {
+    border: 2px solid #e8eff2;
+}
+.bookingWidget {
+    background: #fff;
+}
+.bookingWidget input[type="text"],
+.bookingWidget input[type="email"],
+.bookingWidget select {
+    height: 34px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.bookingWidget input[type="text"]::-ms-clear,
+.bookingWidget input[type="email"]::-ms-clear,
+.bookingWidget select::-ms-clear {
+    display: none !important;
+}
+.bookingWidget fieldset {
+    margin-bottom: 6px;
+}
+.bookingWidget .formValidation {
+    padding-left: 18px;
+    padding-right: 18px;
+}
+.bookingWidget .form-error {
+    font-size: 10.5px;
+    font-size: .7rem;
+    line-height: 2.28571;
+    font-weight: bold;
+    background: transparent;
+    color: #e51937;
+    padding: 0;
+    margin: -15px 0 0 0;
+}
+.bookingWidget .form-error:after {
+    display: none;
+}
+.bookingWidget .toggleFieldsTarget {
+    -webkit-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    -webkit-transform: translateZ(0);
+    position: relative;
+    max-height: auto;
+    margin-top: -9px;
+}
+.bookingWidget .toggleFieldsTarget input {
+    margin-bottom: 12px;
+}
+.bookingWidget .toggleFieldsTarget.is-hidden {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+.bookingWidget .flashInput input[type="text"],
+.bookingWidget .flashInput input[type="tel"],
+.bookingWidget .flashInput input[type="email"],
+.bookingWidget .flashInput select,
+.bookingWidget .flashInput .uploader {
+    -webkit-animation: none;
+    animation: none;
+}
+.bookingWidget-heading {
+    font-weight: bold;
+    background: #e7e7e8;
+    color: #007d3b;
+    padding: 22px 0;
+    text-align: center;
+    margin: 0;
+    text-transform: capitalize;
+}
+.pods-widget {
+    background: white;
+    max-width: 340px;
+    position: absolute;
+    top: 140px;
+    right: 20px;
+    font: .9375em/1.6 Arial,"Helvetica Neue",sans-serif;
+    font-size: 80%;
+}
+.pods-widget input[type="text"], .pods-widget input[type="email"], .pods-widget select {
+    font: .9375em/1.6 Arial,"Helvetica Neue",sans-serif;
+    font-size: 100%;
+}
+.pods-quoteWidget .pods-button.pods-buttonRed {
+    width: 100%;
+    margin: 2em 0;
+}
+.pods-quoteWidget {
+    padding: 2em;
+    position: relative;
+}
+.pods-quoteWidget .pods-heading {
+    color: #007d3b;
+    font-weight: bold;
+    padding: 1.25em 0 0 0;
+}
+.pods-quoteWidget .pods-heading.first {
+    padding-top: 0;
+}
+
+label, .labelItems {
+    color: #555;
+    cursor: pointer;
+}
+.formRadioButton input:checked + label::before {
+    background: #007d3b;
+}
+.formRadioButton label::before {
+    border-radius: 50%;
+}
+.formCheckBox label::before, .formRadioButton label::before {
+    content: '\00A0';
+    height: 13px;
+    width: 13px;
+    line-height: 14px;
+    font-size: 0;
+    vertical-align: middle;
+    background: #fff;
+    padding: 3px;
+    color: #e7e7e8;
+    margin: -2px 6px 0 0;
+    border: 4px solid #e7e7e8;
+}
+.formRadioButton label {
+    font-weight: normal;
+    position: relative;
+    cursor: pointer;
+    margin: 0 10px 0 0;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+.formCheckBox input, .formRadioButton input {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+.formCheckBox > span, .formRadioButton > span {
+    margin: 0 2em 0 0;
+    display: inline-block;
+}
+.pods-quoteWidget .pods-button.pods-buttonRed {
+    width: 100%;
+    margin: 2em 0;
+}
+.pods-button.pods-buttonRed {
+    background: #f63632;
+}
+.pods-quoteWidget .pods-button.pods-buttonRed:hover {
+    background: #007d3b;
+}
+a.pods-button {
+    color: #FFF;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    line-height: 3.5em;
+}
+.chead-accordion03 .panel-heading a, .chead-accordion03 .panel-heading a.collapsed {
+    color: #007d3b;
+    text-transform: capitalize;
+}
+.chead-accordion03 .panel-body {
+    padding: 0;
+}
+.chead-accordion03 .panel-heading {
+    border-bottom: none;
+}
+.chead-accordion03 .panel-heading .collapsed .arrow {
+    background-color: #007d3b;
+}
+.icon-back-in-time {
+    font-size: 14px;
+    color: #f63632;
+    text-align: center;
+    cursor: pointer;
+}
