@@ -1,9 +1,9 @@
 function initMap() {
         
         var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 40.674, lng: -73.945},
+          center: {lat: 34.224880, lng: -80.598870},
           scrollwheel: false,
-          zoom: 12,
+          zoom: 7,
           styles: [
             {
             elementType: 'geometry',
@@ -93,12 +93,34 @@ function initMap() {
           }
         ]
         });
+    
+    
+        var features = [
+          {
+            position: new google.maps.LatLng(34.224880, -80.598870),
+            type: 'info'
+          }, {
+            position: new google.maps.LatLng(34.713460, -80.804200),
+            type: 'info'
+          }, {
+            position: new google.maps.LatLng(33.017570, -80.211140),
+            type: 'info'
+          }
+        ];
 
-        var marker = new google.maps.Marker({
-            position: new google.maps.LatLng(40.674, -73.945),
-            map: map,
-            title: 'Find us here!'
+        features.forEach(function(feature) {
+              var marker = new google.maps.Marker({
+                position: feature.position,
+                map: map,
+                title: 'Find us here!'
+            });
         });
+    
+//        var marker = new google.maps.Marker({
+//            position: feature.position,
+//            map: map,
+//            title: 'Find us here!'
+//        });
 
         // var image = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
         // var beachMarker3 = new google.maps.Marker({
