@@ -322,14 +322,15 @@
                                             <div class="input-group-addon">
                                                 <span class="glyphicon glyphicon-th"></span>
                                             </div>
-                                            <input type="text" placeholder="01/10/2018" class="form-control" id="txtDeliveryDate" name="txtDeliveryDate">
+                                            <input type="text" placeholder="01/10/2018" class="form-control" id="txtDeliveryDate" name="txtDeliveryDate" required>
                                         </div>
                                     </div>
 
                                     <div id="divDuration">
                                         <div class="formRow">
                                             <label for="timeDuration" class="pods-heading">I'll need my container for</label>
-                                            <select name="timeDuration" id="timeDuration">
+                                            <p>Special deals may be available for 3+ months rentals.</p>
+                                            <select name="timeDuration" id="timeDuration" required>
                                                 <option value="">Please Select</option>
                                                 <option value="1">Up to 1 month</option>
                                                 <option value="2">2 months or more</option>
@@ -349,7 +350,7 @@
 
                                     <div class="formRow">
                                         <label for="txtEmail" class="pods-heading">Email</label>
-                                        <input name="txtEmail" maxlength="60" id="txtEmail" type="email">
+                                        <input name="txtEmail" maxlength="60" id="txtEmail" type="email" required>
                                     </div>
 
                                     <div class="panel-group chead-accordion03" id="chead-acc03">
@@ -366,6 +367,8 @@
                                     </div>
 
                                      <input id="ctl11_QuickQuote_btnSubmit" type="submit" value="Get Your Free Quote" class="submit-btn btn btn-primary pods-button pods-buttonRed">
+                                    
+                                    <div class="form-alert-message padding-two mb10"></div>
                                     
                                     <p class="icon-back-in-time"><i class="fa fa-undo"></i> Retrieve a previous quote</p>
 
@@ -442,7 +445,7 @@
         <!-- End Service Section -->
 
         <!-- Start Text & image Section -->
-        <section class="bg-gray-light about-us-block">
+        <section class="bg-gray-light about-us-block pad-b50">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-12 min-height-650 xs-display-none no-padding" style="background: url(assets/images/about/cardinal-straight-truck-trailer-stomologo.jpg) no-repeat;">

@@ -4311,10 +4311,6 @@ label {
     font: .9375em/1.6 Arial,"Helvetica Neue",sans-serif;
     font-size: 100%;
 }
-.pods-quoteWidget .pods-button.pods-buttonRed {
-    width: 100%;
-    margin: 2em 0;
-}
 .pods-quoteWidget {
     padding: 2em;
     position: relative;
@@ -4376,7 +4372,7 @@ label, .labelItems {
 }
 .pods-quoteWidget .pods-button.pods-buttonRed {
     width: 100%;
-    margin: 2em 0;
+    margin: 0 0 10px;
 }
 .pods-button.pods-buttonRed {
     background: #f63632;
@@ -4412,4 +4408,7 @@ a.pods-button {
 }
 .contacts-block a.green:hover {
     color: #222;
+}
+.panel-group {
+    margin-bottom: 0;
 }

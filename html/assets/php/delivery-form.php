@@ -1,37 +1,35 @@
 <?php
 
-header('Access-Control-Allow-Origin: http://customemb.net');
-header('Access-Control-Allow-Credentials: true');
-header('Content-type: application/xml');
+//header('Access-Control-Allow-Origin: http://customemb.net');
+//header('Access-Control-Allow-Credentials: true');
+//header('Content-type: application/xml');
 
-if (isset ($_POST['email'])) {
+if (isset ($_POST['txtEmail'])) {
     
-    $typeOfGarment = implode(', ', $_POST['typeOfGarment']);
-    $howManyDoYouNeed = implode(', ', $_POST['howManyDoYouNeed']);
-    $whichDoYouPrefer = implode(', ', $_POST['whichDoYouPrefer']);
-    $howManyColorsOne = $_POST['howManyColorsOne'];
-    $howManyColorsSecond = $_POST['howManyColorsSecond'];
-    $calendar_date = date('Y-m-d', strtotime(trim($_POST['calendar'])));
-    $firstName = $_POST['firstName'];
-    $lastName = $_POST['lastName'];
-    $email = $_POST['email'];
-    $phone = $_POST['phone'];
+//    $typeOfGarment = implode(', ', $_POST['typeOfGarment']);
+    $whichCategoryFits = $_POST["whichCategoryFits"];
+    $divNeed = $_POST['divNeed'];
+    $storeContainer = $_POST['storeContainer'];
+    $txtDeliveryZip = $_POST['txtDeliveryZip'];
+    $txtFirstDeliveryZip = $_POST['txtFirstDeliveryZip'];
+    $txtFinalDeliveryZip = $_POST['txtFinalDeliveryZip'];
+    $txtDeliveryDate = date('Y-m-d', strtotime(trim($_POST['txtDeliveryDate'])));
+    $timeDuration = $_POST['timeDuration'];
+    $email = $_POST['txtEmail'];
+    $txtPromoCode = $_POST['txtPromoCode'];
     
-    
-  //$to = "steven@customemb.net"; 
   $to = "masjaha88@gmail.com"; 
   $subject = "New contact from website ".$_SERVER['HTTP_REFERER'];
     
-    $message = "Type of garment: $typeOfGarment \n";
-    $message .= "Quantity: $howManyDoYouNeed \n";
-    $message .= "Which Do You Prefer: $whichDoYouPrefer \n";
-    $message .= "Colors on 1st printing location: $howManyColorsOne \n";
-    $message .= "Colors on 2st printing location: $howManyColorsSecond \n";
-    $message .= "Terms: $calendar_date \n";
-    $message .= "First Name: $firstName \n";
-    $message .= "Last Name: $lastName \n";
+    $message = "Which category fits you best? $whichCategoryFits \n";
+    $message .= "I need to: $divNeed \n";
+    $message .= "Store container at: $storeContainer \n";
+    $message .= "ZIP Code for Delivery: $txtDeliveryZip \n";
+    $message .= "First Delivery ZIP: $txtFirstDeliveryZip \n";
+    $message .= "Final Delivery ZIP: $txtFinalDeliveryZip \n";
+    $message .= "Deliver my empty container on: $txtDeliveryDate \n";
     $message .= "Email: $email \n";
-    $message .= "Phone: $phone \n";
+    $message .= "Promo Code: $txtPromoCode \n";
     
   $boundary = md5(date('r', time()));
   $filesize = '';
