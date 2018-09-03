@@ -28,6 +28,7 @@ if (isset ($_POST['txtEmail'])) {
     $message .= "First Delivery ZIP: $txtFirstDeliveryZip \n";
     $message .= "Final Delivery ZIP: $txtFinalDeliveryZip \n";
     $message .= "Deliver my empty container on: $txtDeliveryDate \n";
+    $message .= "I'll need my container for: $timeDuration \n";
     $message .= "Email: $email \n";
     $message .= "Promo Code: $txtPromoCode \n";
     

@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 1px;
     font-family: 'Barlow', sans-serif !important;
 }
-img {
+.logo img {
     height: 76px;
 }
 .text-left {
@@ -4198,8 +4198,7 @@ label {
     padding: 20px 25px;
 }
 .about-us-block span {
-    text-transform: lowercase;
-    margin-bottom: 26px;
+    margin: 15px 0 26px;
     display: block;
 }
 .bookingWidget {
@@ -4411,4 +4410,7 @@ a.pods-button {
 }
 .panel-group {
     margin-bottom: 0;
+}
+.about-us-block h6 {
+    color: #007d3b;
 }
