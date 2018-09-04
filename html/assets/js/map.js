@@ -115,20 +115,7 @@ function initMap() {
                 title: 'Find us here!'
             });
         });
-    
-//        var marker = new google.maps.Marker({
-//            position: feature.position,
-//            map: map,
-//            title: 'Find us here!'
-//        });
 
-        // var image = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
-        // var beachMarker3 = new google.maps.Marker({
-        //   position: {lat: 40.674, lng: -73.945},
-        //   map: map,
-        //   icon: image,
-        //   title: 'You are here'
-        // });
 }
 
 
