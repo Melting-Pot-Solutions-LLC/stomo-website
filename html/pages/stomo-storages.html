@@ -93,7 +93,7 @@
 
     <div class="loader"></div>
 
-    <div id="container">
+    <div class="container-block single-page-container">
 
         <!-- Start Top Header Section -->
         <div class="topbar">
@@ -198,20 +198,20 @@
                 </div>
                 <div class="row">
                     <div class="col-md-5">
-                        <section class="pad-t70">
+                        <section class="">
                             <div class="container pods-widget">
                                 <div class="row">
                                     <h3 class="bookingWidget-heading">Get a Quick Quote</h3>
                                     <div class="pods-quoteWidget">
 
-                                        <form enctype="multipart/form-data" method="post" id="feedback-form" class="contact-form">
+                                        <form enctype="multipart/form-data" method="post" class="delivery-form" id="delivery-form-2">
                                             <label class="pods-heading first">Which category fits you best?</label>
                                             <div class="formRow formRadioButton">
-                                                <input id="categoryResidential" name="whichCategoryFits" value="Residential" checked="checked" type="radio">
-                                                <label for="categoryResidential">Residential </label>
+                                                <input id="categoryResidential-2" name="whichCategoryFits" value="Residential" checked="checked" type="radio" class="categoryResidential">
+                                                <label for="categoryResidential-2">Residential </label>
 
-                                                <input id="categoryBusiness" name="whichCategoryFits" value="Business-Government" type="radio">
-                                                <label for="categoryBusiness">Business/Government</label>
+                                                <input id="categoryBusiness-2" name="whichCategoryFits" value="Business-Government" type="radio" class="categoryBusiness">
+                                                <label for="categoryBusiness-2">Business/Government</label>
                                             </div>
 
 
@@ -219,69 +219,69 @@
                                                 <div class="formRow">
                                                     <div id="divNeed" class="formRadioButton">
                                                         <span class="needStoreBlock">
-                                                            <input id="needStore" name="divNeed" value="Store" checked="checked" type="radio">
-                                                            <label for="needStore">Store</label>
+                                                            <input id="needStore-2" name="divNeed" value="Store" checked="checked" type="radio" class="needStore">
+                                                            <label for="needStore-2">Store</label>
                                                         </span>
                                                         <span class="needMoveBlock">
-                                                            <input id="needMove" name="divNeed" value="Move" type="radio">
-                                                            <label for="needMove">Move</label>
+                                                            <input id="needMove-2" name="divNeed" value="Move" type="radio" class="needMove">
+                                                            <label for="needMove-2">Move</label>
                                                         </span>
                                                         <span class="bothMoveBlock">
-                                                            <input id="needBoth" name="divNeed" value="Both" type="radio">
-                                                            <label for="needBoth">Both</label>
+                                                            <input id="needBoth-2" name="divNeed" value="Both" type="radio" class="needBoth">
+                                                            <label for="needBoth-2">Both</label>
                                                         </span>
                                                     </div>
                                                 </div>
 
 
-                                                <div id="divStoreLocationChoice" class="formRow store-delivery">
+                                                <div id="divStoreLocationChoice" class="formRow store-delivery divStoreLocationChoice">
                                                     <label class="pods-heading">Store container at</label>
                                                     <div class="formRadioButton">
                                                         <span>
-                                                            <input id="storeContainerLocation" name="storeContainer" value="My-Location" checked="checked" type="radio">
-                                                            <label for="storeContainerLocation">My Location</label>
+                                                            <input id="storeContainerLocation-2" name="storeContainer" value="My-Location" checked="checked" type="radio" class="storeContainerLocation">
+                                                            <label for="storeContainerLocation-2">My Location</label>
                                                         </span><span>
-                                                            <input id="storeContainerPODS" name="storeContainer" value="Storage-Center" type="radio">
-                                                            <label for="storeContainerPODS">Storage Center</label>
+                                                            <input id="storeContainerPODS-2" name="storeContainer" value="Storage-Center" type="radio" class="storeContainerPODS">
+                                                            <label for="storeContainerPODS-2">Storage Center</label>
                                                         </span>
                                                     </div>
                                                 </div>
 
                                                     <div id="divDeliveryZip" class="store-delivery">
                                                         <div class="formRow">
-                                                            <label for="txtDeliveryZip" class="pods-heading">ZIP Code for Delivery</label>
-                                                            <input name="txtDeliveryZip" id="txtDeliveryZip" placeholder="ZIP/Postal Code" type="text">
+                                                            <label for="txtDeliveryZip-2" class="pods-heading">ZIP Code for Delivery</label>
+                                                            <input name="txtDeliveryZip" id="txtDeliveryZip-2" placeholder="ZIP/Postal Code" type="text" class="txtDeliveryZip">
                                                         </div>
                                                     </div>
 
                                                     <div class="row move-delivery">
                                                         <div class="divFirstDeliveryZip col-sm-6">
-                                                            <label for="txtFirstDeliveryZip" class="pods-heading">First Delivery ZIP</label>
-                                                            <input name="txtFirstDeliveryZip" id="txtFirstDeliveryZip" placeholder="ZIP/Postal Code" type="text">
+                                                            <label for="txtFirstDeliveryZip-2" class="pods-heading">First Delivery ZIP</label>
+                                                            <input name="txtFirstDeliveryZip" id="txtFirstDeliveryZip-2" placeholder="ZIP/Postal Code" type="text" class="txtFirstDeliveryZip">
                                                         </div>
 
                                                         <div class="divFinalDeliveryZip col-sm-6">
-                                                            <label for="txtFinalDeliveryZip" class="pods-heading">Final Delivery ZIP</label>
-                                                            <input name="txtFinalDeliveryZip" id="txtFinalDeliveryZip" placeholder="ZIP/Postal Code" type="text">
+                                                            <label for="txtFinalDeliveryZip-2" class="pods-heading">Final Delivery ZIP</label>
+                                                            <input name="txtFinalDeliveryZip" id="txtFinalDeliveryZip-2" placeholder="ZIP/Postal Code" type="text" class="txtFinalDeliveryZip">
                                                         </div>
                                                     </div>
 
 
                                                     <div class="formRow">
-                                                        <label for="txtDeliveryDate" class="aspNetDisabled pods-heading">Deliver my empty container on</label>
+                                                        <label for="txtDeliveryDate-2" class="aspNetDisabled pods-heading">Deliver my empty container on</label>
                                                         <div class="input-group date" data-provide="datepicker">
                                                             <div class="input-group-addon">
                                                                 <span class="glyphicon glyphicon-th"></span>
                                                             </div>
-                                                            <input type="text" placeholder="01/10/2018" class="form-control" id="txtDeliveryDate" name="txtDeliveryDate" required>
+                                                            <input type="text" placeholder="01/10/2018" class="form-control txtDeliveryDate" id="txtDeliveryDate-2" name="txtDeliveryDate" required>
                                                         </div>
                                                     </div>
 
                                                     <div id="divDuration">
                                                         <div class="formRow">
-                                                            <label for="timeDuration" class="pods-heading">I'll need my container for</label>
+                                                            <label for="timeDuration-2" class="pods-heading">I'll need my container for</label>
                                                             <p>Special deals may be available for 3+ months rentals.</p>
-                                                            <select name="timeDuration" id="timeDuration" required>
+                                                            <select name="timeDuration" id="timeDuration-2" class="timeDuration" required>
                                                                 <option value="">Please Select</option>
                                                                 <option value="1">Up to 1 month</option>
                                                                 <option value="2">2 months or more</option>
@@ -300,24 +300,24 @@
                                                     </div>
 
                                                     <div class="formRow">
-                                                        <label for="txtEmail" class="pods-heading">Email</label>
-                                                        <input name="txtEmail" maxlength="60" id="txtEmail" type="email" required>
+                                                        <label for="txtEmail-2" class="pods-heading">Email</label>
+                                                        <input name="txtEmail" maxlength="60" id="txtEmail-2" type="email" class="txtEmail" required>
                                                     </div>
 
-                                                    <div class="panel-group chead-accordion03" id="chead-acc03">
+                                                    <div class="panel-group chead-accordion03" id="chead-acc02">
                                                         <div class="panel panel-default">
                                                             <div class="panel-heading">
-                                                                <h4 class="panel-title"><a data-parent="#chead-acc03" data-toggle="collapse" href="#chead-acc03-1" aria-expanded="false" class="collapsed"><span class="arrow"></span>Promo Code</a></h4>
+                                                                <h4 class="panel-title"><a data-parent="#chead-acc02" data-toggle="collapse" href="#chead-acc02-2" aria-expanded="false" class="collapsed"><span class="arrow"></span>Promo Code</a></h4>
                                                             </div>
-                                                            <div class="panel-collapse collapse" id="chead-acc03-1">
+                                                            <div class="panel-collapse collapse" id="chead-acc02-2">
                                                                 <div class="panel-body">
-                                                                    <input name="txtPromoCode" id="txtPromoCode" class="has-helper" placeholder="Promo Code (optional)" type="text">
+                                                                    <input name="txtPromoCode" id="txtPromoCode-2" class="has-helper txtPromoCode" placeholder="Promo Code (optional)" type="text">
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
 
-                                                     <input id="ctl11_QuickQuote_btnSubmit" type="submit" value="Get Your Free Quote" class="submit-btn btn btn-primary pods-button pods-buttonRed">
+                                                     <input id="delivery-btnSubmit-2" type="submit" value="Get Your Free Quote" class="submit-btn btn btn-primary pods-button pods-buttonRed">
 
                                                     <div class="form-alert-message padding-two mb10"></div>
 
@@ -429,6 +429,31 @@
 
     <!-- template main js file -->
     <script src="../assets/js/main.js"></script>
+    <script>
+        var formMessages = $('.form-alert-message');
+        
+        document.getElementById("delivery-form-2").addEventListener("submit",function(event) {
+          var http = new XMLHttpRequest();
+          var f = this;
+          event.preventDefault();
+          http.open("POST", "assets/php/delivery-form.php", true);
+          http.onreadystatechange = function() {
+            if (http.readyState == 4 && http.status == 200) {
+                $(formMessages).removeClass('hidden');
+                $(formMessages).removeClass('alert-danger');
+                $(formMessages).addClass('alert-success');
+                $(formMessages).text('Thank You! Your message has been sent.');
+                backInTime();
+            }
+          }
+          http.onerror = function() {
+              $(formMessages).removeClass('hidden');
+              $(formMessages).addClass('alert-danger');
+              $(formMessages).text('Oops! An error occured and your message could not be sent.');
+          }
+          http.send(new FormData(f));
+        },false);
+    </script>
     <!-- all js include end -->
 
 </body>

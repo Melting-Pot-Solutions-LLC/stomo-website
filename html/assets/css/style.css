@@ -18,7 +18,7 @@ body {
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
 }
-#container {
+.container-block {
     background: #fff;
     position: relative;
     overflow-x: hidden;
@@ -4413,4 +4413,13 @@ a.pods-button {
 }
 .about-us-block h6 {
     color: #007d3b;
+}
+.single-page-container .pods-widget {
+    position: relative;
+    top: 0;
+    right: 0;
+    border: 2px solid #007d3b;
+}
+.rev_slider .tp-caption {
+    text-shadow: 2px 2px 1px #000;
 }

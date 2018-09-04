@@ -482,74 +482,49 @@
     
     // Delivery form script
     $(document).ready(function() {
-        if ($("#needStore").prop("checked", true)) {
+        if ($(".needStore").prop("checked", true)) {
             $(".move-delivery").hide();
-            $("#txtDeliveryZip").prop("required",true);
+            $(".txtDeliveryZip").prop("required",true);
         }
         
         $('.needStoreBlock').on('click', function(){
             $(".move-delivery").hide();
             $(".store-delivery").show();
-            $("#txtDeliveryZip").prop("required",true);
-            $("#txtFirstDeliveryZip").removeAttr("required");
-            $("#txtFinalDeliveryZip").removeAttr("required");
+            $(".txtDeliveryZip").prop("required",true);
+            $(".txtFirstDeliveryZip").removeAttr("required");
+            $(".txtFinalDeliveryZip").removeAttr("required");
         });
         $('.needMoveBlock').on('click', function(){
             $(".move-delivery").show();
             $(".store-delivery").hide();
-            $("#txtDeliveryZip").removeAttr("required");
-            $("#txtFirstDeliveryZip").prop("required",true);
-            $("#txtFinalDeliveryZip").prop("required",true);
+            $(".txtDeliveryZip").removeAttr("required");
+            $(".txtFirstDeliveryZip").prop("required",true);
+            $(".txtFinalDeliveryZip").prop("required",true);
         });
         $('.bothMoveBlock').on('click', function(){
             $(".move-delivery").show();
             $(".store-delivery").hide();
-            $("#divStoreLocationChoice").show();
-            $("#txtDeliveryZip").removeAttr("required");
-            $("#txtFirstDeliveryZip").prop("required",true);
-            $("#txtFinalDeliveryZip").prop("required",true);
+            $(".divStoreLocationChoice").show();
+            $(".txtDeliveryZip").removeAttr("required");
+            $(".txtFirstDeliveryZip").prop("required",true);
+            $(".txtFinalDeliveryZip").prop("required",true);
         });
         
         
         function backInTime() {
-            $("#txtDeliveryZip").val('');
-            $("#txtFirstDeliveryZip").val('');
-            $("#txtFinalDeliveryZip").val('');
-            $("#txtEmail").val('');
-            $("#txtPromoCode").val('');
-            $("#txtDeliveryDate").val('');
-            $("#timeDuration").val($("#timeDuration option:first").val());
-            $("#needStore").prop("checked", true);
-            $("#categoryResidential").prop("checked", true);
-            $("#storeContainerLocation").prop("checked", true);
+            $(".txtDeliveryZip").val('');
+            $(".txtFirstDeliveryZip").val('');
+            $(".txtFinalDeliveryZip").val('');
+            $(".txtEmail").val('');
+            $(".txtPromoCode").val('');
+            $(".txtDeliveryDate").val('');
+            $(".timeDuration").val($(".timeDuration option:first").val());
+            $(".needStore").prop("checked", true);
+            $(".categoryResidential").prop("checked", true);
+            $(".storeContainerLocation").prop("checked", true);
         }
         
         $('.icon-back-in-time').on('click', backInTime);
-        
-        var formMessages = $('.form-alert-message');
-        document.getElementById('feedback-form').addEventListener('submit', function(evt){
-
-          var http = new XMLHttpRequest();
-          var f = this;
-          evt.preventDefault();
-          http.open("POST", "assets/php/delivery-form.php", true);
-          http.onreadystatechange = function() {
-            if (http.readyState == 4 && http.status == 200) {
-                $(formMessages).removeClass('hidden');
-                $(formMessages).removeClass('alert-danger');
-                $(formMessages).addClass('alert-success');
-                $(formMessages).text('Thank You! Your message has been sent.');
-                backInTime();
-            }
-          }
-          http.onerror = function() {
-              $(formMessages).removeClass('hidden');
-              $(formMessages).addClass('alert-danger');
-              $(formMessages).text('Oops! An error occured and your message could not be sent.');
-          }
-          http.send(new FormData(f));
-
-        }, false);
         
     });
     // Delivery form script end

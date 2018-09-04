@@ -93,7 +93,7 @@
 
     <div class="loader"></div>
 
-    <div id="container">
+    <div class="container-block single-page-container">
 
         <!-- Start Top Header Section -->
         <div class="topbar">
@@ -198,7 +198,137 @@
                 </div>
                 <div class="row">
                     <div class="col-md-5">
+                        <section class="">
+                            <div class="container pods-widget">
+                                <div class="row">
+                                    <h3 class="bookingWidget-heading">Get a Quick Quote</h3>
+                                    <div class="pods-quoteWidget">
 
+                                        <form enctype="multipart/form-data" method="post" class="delivery-form" id="delivery-form-4">
+                                            <label class="pods-heading first">Which category fits you best?</label>
+                                            <div class="formRow formRadioButton">
+                                                <input id="categoryResidential-4" name="whichCategoryFits" value="Residential" checked="checked" type="radio" class="categoryResidential">
+                                                <label for="categoryResidential-4">Residential </label>
+
+                                                <input id="categoryBusiness-4" name="whichCategoryFits" value="Business-Government" type="radio" class="categoryBusiness">
+                                                <label for="categoryBusiness-4">Business/Government</label>
+                                            </div>
+
+
+                                                <label class="pods-heading">I need to</label>
+                                                <div class="formRow">
+                                                    <div id="divNeed" class="formRadioButton">
+                                                        <span class="needStoreBlock">
+                                                            <input id="needStore-4" name="divNeed" value="Store" checked="checked" type="radio" class="needStore">
+                                                            <label for="needStore-4">Store</label>
+                                                        </span>
+                                                        <span class="needMoveBlock">
+                                                            <input id="needMove-4" name="divNeed" value="Move" type="radio" class="needMove">
+                                                            <label for="needMove-4">Move</label>
+                                                        </span>
+                                                        <span class="bothMoveBlock">
+                                                            <input id="needBoth-4" name="divNeed" value="Both" type="radio" class="needBoth">
+                                                            <label for="needBoth-4">Both</label>
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+
+                                                <div id="divStoreLocationChoice" class="formRow store-delivery divStoreLocationChoice">
+                                                    <label class="pods-heading">Store container at</label>
+                                                    <div class="formRadioButton">
+                                                        <span>
+                                                            <input id="storeContainerLocation-4" name="storeContainer" value="My-Location" checked="checked" type="radio" class="storeContainerLocation">
+                                                            <label for="storeContainerLocation-4">My Location</label>
+                                                        </span><span>
+                                                            <input id="storeContainerPODS-4" name="storeContainer" value="Storage-Center" type="radio" class="storeContainerPODS">
+                                                            <label for="storeContainerPODS-4">Storage Center</label>
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                                    <div id="divDeliveryZip" class="store-delivery">
+                                                        <div class="formRow">
+                                                            <label for="txtDeliveryZip-4" class="pods-heading">ZIP Code for Delivery</label>
+                                                            <input name="txtDeliveryZip" id="txtDeliveryZip-4" placeholder="ZIP/Postal Code" type="text" class="txtDeliveryZip">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row move-delivery">
+                                                        <div class="divFirstDeliveryZip col-sm-6">
+                                                            <label for="txtFirstDeliveryZip-4" class="pods-heading">First Delivery ZIP</label>
+                                                            <input name="txtFirstDeliveryZip" id="txtFirstDeliveryZip-4" placeholder="ZIP/Postal Code" type="text" class="txtFirstDeliveryZip">
+                                                        </div>
+
+                                                        <div class="divFinalDeliveryZip col-sm-6">
+                                                            <label for="txtFinalDeliveryZip-4" class="pods-heading">Final Delivery ZIP</label>
+                                                            <input name="txtFinalDeliveryZip" id="txtFinalDeliveryZip-4" placeholder="ZIP/Postal Code" type="text" class="txtFinalDeliveryZip">
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="formRow">
+                                                        <label for="txtDeliveryDate-4" class="aspNetDisabled pods-heading">Deliver my empty container on</label>
+                                                        <div class="input-group date" data-provide="datepicker">
+                                                            <div class="input-group-addon">
+                                                                <span class="glyphicon glyphicon-th"></span>
+                                                            </div>
+                                                            <input type="text" placeholder="01/10/2018" class="form-control txtDeliveryDate" id="txtDeliveryDate-4" name="txtDeliveryDate" required>
+                                                        </div>
+                                                    </div>
+
+                                                    <div id="divDuration">
+                                                        <div class="formRow">
+                                                            <label for="timeDuration-4" class="pods-heading">I'll need my container for</label>
+                                                            <p>Special deals may be available for 3+ months rentals.</p>
+                                                            <select name="timeDuration" id="timeDuration-4" class="timeDuration" required>
+                                                                <option value="">Please Select</option>
+                                                                <option value="1">Up to 1 month</option>
+                                                                <option value="2">2 months or more</option>
+                                                                <option value="3">3 months or more</option>
+                                                                <option value="4">4 months or more</option>
+                                                                <option value="5">5 months or more</option>
+                                                                <option value="6">6 months or more</option>
+                                                                <option value="7">7 months or more</option>
+                                                                <option value="8">8 months or more</option>
+                                                                <option value="9">9 months or more</option>
+                                                                <option value="10">10 months or more</option>
+                                                                <option value="11">11 months or more</option>
+                                                                <option value="12">12 months or more</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="formRow">
+                                                        <label for="txtEmail-4" class="pods-heading">Email</label>
+                                                        <input name="txtEmail" maxlength="60" id="txtEmail-4" type="email" class="txtEmail" required>
+                                                    </div>
+
+                                                    <div class="panel-group chead-accordion03" id="chead-acc04">
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title"><a data-parent="#chead-acc04" data-toggle="collapse" href="#chead-acc04-4" aria-expanded="false" class="collapsed"><span class="arrow"></span>Promo Code</a></h4>
+                                                            </div>
+                                                            <div class="panel-collapse collapse" id="chead-acc04-4">
+                                                                <div class="panel-body">
+                                                                    <input name="txtPromoCode" id="txtPromoCode-4" class="has-helper txtPromoCode" placeholder="Promo Code (optional)" type="text">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                     <input id="delivery-btnSubmit-4" type="submit" value="Get Your Free Quote" class="submit-btn btn btn-primary pods-button pods-buttonRed">
+
+                                                    <div class="form-alert-message padding-two mb10"></div>
+
+                                                    <p class="icon-back-in-time"><i class="fa fa-undo"></i> Retrieve a previous quote</p>
+
+                                        </form>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                     </div>
                     <!-- Start Map Section -->
                     <div class="col-md-7 animatable fadeInDown">
@@ -216,7 +346,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-5 col-sm-6 mb-md-20">
-                        <div class="section-title-2">
+                        <div class="section-title-4">
                             <h3>Сontacts</h3>
                         </div>
                         <div class="footer-address">
@@ -237,7 +367,7 @@
                         </div>
                     </div>
                     <div class="col-md-7 col-sm-6 mb-md-20">
-                        <div class="section-title-2">
+                        <div class="section-title-4">
                             <h3>How to reach us!</h3>
                         </div>
                         <div class="footer-address">
@@ -299,6 +429,31 @@
 
     <!-- template main js file -->
     <script src="../assets/js/main.js"></script>
+    <script>
+        var formMessages = $('.form-alert-message');
+        
+        document.getElementById("delivery-form-4").addEventListener("submit",function(event) {
+          var http = new XMLHttpRequest();
+          var f = this;
+          event.preventDefault();
+          http.open("POST", "assets/php/delivery-form.php", true);
+          http.onreadystatechange = function() {
+            if (http.readyState == 4 && http.status == 200) {
+                $(formMessages).removeClass('hidden');
+                $(formMessages).removeClass('alert-danger');
+                $(formMessages).addClass('alert-success');
+                $(formMessages).text('Thank You! Your message has been sent.');
+                backInTime();
+            }
+          }
+          http.onerror = function() {
+              $(formMessages).removeClass('hidden');
+              $(formMessages).addClass('alert-danger');
+              $(formMessages).text('Oops! An error occured and your message could not be sent.');
+          }
+          http.send(new FormData(f));
+        },false);
+    </script>
     <!-- all js include end -->
 
 </body>
