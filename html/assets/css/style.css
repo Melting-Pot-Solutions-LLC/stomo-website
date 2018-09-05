@@ -4198,7 +4198,7 @@ label {
     padding: 20px 25px;
 }
 .about-us-block span {
-    margin: 15px 0 26px;
+    margin: 0 0 6px;
     display: block;
 }
 .bookingWidget {
@@ -4429,4 +4429,7 @@ a.pods-button {
 }
 .stomo-storages-img {
     max-width: 100%;
+}
+.service-area-icons {
+    height: 43px;
 }

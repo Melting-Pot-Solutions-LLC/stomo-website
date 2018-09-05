@@ -329,8 +329,7 @@
                             <div class="section-title left mb50">
                                 <h3>Stomo Storages</h3>
                             </div>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum industry's standard dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum industry's standard dummy text.</p>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum industry's standard dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum industry's standard dummy text.</p>
+                            <p>Stomo owns several storage centers 24/7 . You can choose any of them. We offer devices from 5х5 to 10х20. Access to the facility is available through a security gate with your personal access code.</p>
                             <img src="../assets/images/about/storage-_720.jpg" alt="img" class="mt50 stomo-storages-img">
                         </div>
                     </div>
@@ -375,7 +374,7 @@
                                     <img src="../assets/images/icons/note.jpg" alt="icon">
                                 </div>
                                 <h4 class="pad-b10">Fenced complex</h4>
-                                <p>Boat, trailer and RV storage within fenced complex.</p>
+                                <p>Boat, trailer and RV storage within fenced complex.</p><br><br>
                             </a>
                         </div>
                     </div>
@@ -387,7 +386,7 @@
                                     <img src="../assets/images/icons/box.jpg" alt="icon">
                                 </div>
                                 <h4 class="pad-b10">Packages</h4>
-                                <p>Package receiving and store in your unit</p>
+                                <p>Package receiving and store in your unit</p><br><br>
                             </a>
                         </div>
                     </div>
@@ -500,7 +499,7 @@
                 $(formMessages).removeClass('alert-danger');
                 $(formMessages).addClass('alert-success');
                 $(formMessages).text('Thank You! Your message has been sent.');
-                backInTime();
+                $( ".icon-back-in-time" ).trigger( "click" );
             }
           }
           http.onerror = function() {

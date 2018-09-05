@@ -329,8 +329,8 @@
                             <div class="section-title left mb50">
                                 <h3>Moving Supplies</h3>
                             </div>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum industry's standard dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum industry's standard dummy text.</p>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum industry's standard dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum industry's standard dummy text.</p>
+                            <p>Stomo Mobile Self Storage will get you started with a moving package tailored to your needs. Maybe you just need an assortment of small, medium, and large boxes - we've got you covered. But what if you have dishes, and other fragile items - Dish Pack box - yep, wev'e got it. And the wardrobe box for all those hanging clothes - got that too.</p>
+                            <p>We can place all of these items in your Stomo, along with a moving tape, wrapping paper, and a lock to secure it. Everything will be there when we deliver to your door step.</p>
                             <img src="../assets/images/about/business-residential.jpg" alt="img" class="mt50 stomo-storages-img">
                         </div>
                     </div>
@@ -440,7 +440,7 @@
                 $(formMessages).removeClass('alert-danger');
                 $(formMessages).addClass('alert-success');
                 $(formMessages).text('Thank You! Your message has been sent.');
-                backInTime();
+                $( ".icon-back-in-time" ).trigger( "click" );
             }
           }
           http.onerror = function() {

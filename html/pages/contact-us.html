@@ -253,7 +253,7 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="alert-success mb15 padding-two" style="display: none"></div>
-                        <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="../assets/php/sendemail.php">
+                        <form id="main-contact-form" class="contact-form" enctype="multipart/form-data" method="post">
                             <div class="controls">
                                 <div class="row">
                                     <div class="col-md-12">
@@ -273,6 +273,7 @@
                                             <textarea id="form_message" name="message" class="form-control" maxlength="1000" placeholder="Message *" required="required" data-error="Please,leave us a message." style="min-height: 175px;"></textarea>
                                         </div>
                                         <input type="submit" class="btn btn-primary mb30" value="Send message">
+                                        <div class="form-alert-message padding-two mb10"></div>
                                     </div>
                                 </div>
 
@@ -387,6 +388,32 @@
 
     <!-- template main js file -->
     <script src="../assets/js/main.js"></script>
+    <script>
+        var formMessages = $('.form-alert-message');
+        
+        document.getElementById("main-contact-form").addEventListener("submit",function(event) {
+          var http = new XMLHttpRequest();
+          var f = this;
+          event.preventDefault();
+          http.open("POST", "../assets/php/sendemail.php", true);
+          http.onreadystatechange = function() {
+            if (http.readyState == 4 && http.status == 200) {
+                $(formMessages).removeClass('hidden');
+                $(formMessages).removeClass('alert-danger');
+                $(formMessages).addClass('alert-success');
+                $(formMessages).text('Thank You! Your message has been sent.');
+                $("#main-contact-form input").val("");
+                $("#main-contact-form input[type='submit']").val("Send message");
+            }
+          }
+          http.onerror = function() {
+              $(formMessages).removeClass('hidden');
+              $(formMessages).addClass('alert-danger');
+              $(formMessages).text('Oops! An error occured and your message could not be sent.');
+          }
+          http.send(new FormData(f));
+        },false);
+    </script>
     <!-- all js include end -->
 
 </body>

@@ -331,7 +331,7 @@
                             </div>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum industry's standard dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum industry's standard dummy text.</p>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum industry's standard dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum industry's standard dummy text.</p>
-                            <video class="storage-video mt50" controls>
+                            <video class="storage-video mt50" controls poster="../assets/images/others/video-stomo.jpg">
                                 <source src="../assets/video/Stomo_One_Renovation.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
@@ -444,7 +444,7 @@
                 $(formMessages).removeClass('alert-danger');
                 $(formMessages).addClass('alert-success');
                 $(formMessages).text('Thank You! Your message has been sent.');
-                backInTime();
+                $( ".icon-back-in-time" ).trigger( "click" );
             }
           }
           http.onerror = function() {

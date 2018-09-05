@@ -440,7 +440,7 @@
                 $(formMessages).removeClass('alert-danger');
                 $(formMessages).addClass('alert-success');
                 $(formMessages).text('Thank You! Your message has been sent.');
-                backInTime();
+                $( ".icon-back-in-time" ).trigger( "click" );
             }
           }
           http.onerror = function() {
