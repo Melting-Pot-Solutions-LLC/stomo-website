@@ -433,7 +433,7 @@
           var http = new XMLHttpRequest();
           var f = this;
           event.preventDefault();
-          http.open("POST", "assets/php/delivery-form.php", true);
+          http.open("POST", "../assets/php/delivery-form.php", true);
           http.onreadystatechange = function() {
             if (http.readyState == 4 && http.status == 200) {
                 $(formMessages).removeClass('hidden');
