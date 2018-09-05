@@ -4423,3 +4423,10 @@ a.pods-button {
 .rev_slider .tp-caption {
     text-shadow: 2px 2px 1px #000;
 }
+.storage-video {
+    width: 100%;
+    height: auto;
+}
+.stomo-storages-img {
+    max-width: 100%;
+}
