@@ -113,18 +113,6 @@
                             </ul>
                         </div>
                     </div>
-                    <!--
-                    <div class="col-md-5 col-sm-5 text-right">
-                        <ul class="social-icons">
-                            <li><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="javascript:void(0);"><i class="fa fa-pinterest"></i></a></li>
-                            <li><a href="javascript:void(0);"><i class="fa fa-youtube"></i></a></li>
-                            <li><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="javascript:void(0);"><i class="fa fa-dribbble"></i></a></li>
-                        </ul>
-                    </div>
--->
                 </div>
             </div>
         </div>
@@ -165,7 +153,7 @@
                                     <li><a href="pages/container-size.html">Container Size</a></li>
                                 </ul>
                             </li>
-                            <li class="drop"><a href="pages/location.html">Location</a>
+                            <li class="drop"><a href="pages/service-area.html">Service Area</a>
                             </li>
                             <li class="drop"><a href="pages/contact-us.html">Contact Us</a>
                             </li>
@@ -630,6 +618,28 @@
             </div>
         </section>
         <!-- End Testimonial Section -->
+        
+        <!-- Start Contact Form Section -->
+        <section class="pad-t100">
+            <div class="container-fluid contacts-block">
+                <div class="row">
+                    <div class="section-title text-center animatable fadeInDown">
+                        <h3>Service Area</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="container text-center">
+                        <p class="mb30">Stomo serves all of South Carolina, concentrating currently on: Summerville, Charleston and the surrounding lowcountry. Stomo also serves Columbia and the surroundind area of the midlands.  We can also deliver to the Greenville area of the upstate, as well as the Charlotte area of North Carolina.</p>
+                    </div>
+                    <!-- Start Map Section -->
+                    <div class="col-md-12">
+                        <div id="map" style="height:410px;"></div>
+                    </div>
+                    <!-- End Map Section -->
+                </div>
+            </div>
+        </section>
+        <!-- End Contact Form Section -->
 
         <!-- Start Footer & Copyright Section -->
         <section class="footer-section pad-t70 pad-b50 bg-gray-dark">
@@ -744,6 +754,36 @@
           http.send(new FormData(f));
         },false);
     </script>
+    <script>
+      var citymap = {
+        chicago: {
+          center: {lat: 34.224880, lng: -80.598870},
+          population: 2714856
+        }
+      };
+
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 7,
+          center: {lat: 34.224880, lng: -80.598870}
+        });
+
+        for (var city in citymap) {
+          // Add the circle for this city to the map.
+          var cityCircle = new google.maps.Circle({
+            strokeColor: '#FF0000',
+            strokeOpacity: 0.8,
+            strokeWeight: 2,
+            fillColor: '#FF0000',
+            fillOpacity: 0.35,
+            map: map,
+            center: citymap[city].center,
+            radius: Math.sqrt(citymap[city].population) * 120
+          });
+        }
+      }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIy8l8gSJaMoUvCZJv8AyCAw3CU07nCKs&amp;callback=initMap"></script>
     <!-- all js include end -->
 
 </body>
