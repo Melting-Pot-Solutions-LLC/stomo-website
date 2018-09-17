@@ -4316,7 +4316,7 @@ label {
     font-size: 100%;
 }
 .pods-quoteWidget {
-    padding: 2em;
+    padding: 1em 2em 2em;
     position: relative;
 }
 .pods-quoteWidget .pods-heading {
@@ -4440,4 +4440,7 @@ a.pods-button {
 }
 .container-block {
     font-size: 18px;
+}
+.container-img {
+    width: 100%;
 }
