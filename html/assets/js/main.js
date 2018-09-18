@@ -45,7 +45,7 @@
             sliderType: "standard",
             sliderLayout: "fullwidth",
             dottedOverlay: "none",
-            delay: 4000,
+            delay: 7000,
             spinner: "spinner4",
             navigation: {
                 keyboardNavigation: "off",
