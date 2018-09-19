@@ -4203,9 +4203,8 @@ label {
     font-size: 30px;
     padding: 20px 25px;
 }
-.about-us-block span {
+.about-us-block li {
     margin: 0 0 6px;
-    display: block;
 }
 .bookingWidget {
     margin-top: 0;
@@ -4426,7 +4425,7 @@ a.pods-button {
     right: 0;
     border: 2px solid #007d3b;
 }
-.rev_slider .tp-caption {
+.rev_slider .tp-header {
     text-shadow: 2px 2px 1px #000;
 }
 .storage-video {
