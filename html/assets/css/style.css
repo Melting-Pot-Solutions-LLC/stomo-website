@@ -2381,6 +2381,7 @@ form .product-rating .fa:hover,form .product-rating .fa:focus {
     background: none;
     padding: 18px 5px;
     position: relative;
+    min-height: 200px;
 }
  .feature-box-04 > a:before {
     display: block;
