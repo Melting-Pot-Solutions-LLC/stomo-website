@@ -351,7 +351,7 @@ a.green:hover {
     display: inline-block;
 }
 .red {
-    color: red;
+    color: #f63632;
 }
 .line-through {
     text-decoration: line-through;
@@ -2476,6 +2476,9 @@ form .product-rating .fa:hover,form .product-rating .fa:focus {
 }
  .text-section h3.underline {
     margin-bottom: 50px;
+}
+.underline {
+    text-decoration: underline;
 }
  .text-section h3.underline:after {
     position: absolute;
