@@ -363,8 +363,9 @@
          right: 0;
          margin-bottom: 20px;
      }
-     .tp-header, .tp-splitted {
-         font-size: 20px !important;
+     .tp-header, .tp-splitted, .tp-header, .tp-splitted>span {
+         font-size: 17px !important;
+         line-height: 30px !important;
      }
   }
  @media (max-width: 1024px) {
@@ -1027,4 +1028,12 @@ h3.collapse-xs.active:after {
  .mar-bottom-less {
     margin-bottom: 15px;
 }
+     .second-slide .slider-text {
+         white-space: normal !important;
+         margin: 46px 0px 0px !important;
+     }
+     .second-slide .btn {
+        position: relative;
+        top: 50px;
+     }
 }
