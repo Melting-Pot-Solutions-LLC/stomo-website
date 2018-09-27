@@ -367,6 +367,12 @@
          font-size: 17px !important;
          line-height: 30px !important;
      }
+     .third-slide .tp-bgimg {
+        background-position: center center !important;
+     }
+     .third-slide .tp-splitted {
+         display: inline-block !important;
+     }
   }
  @media (max-width: 1024px) {
   .tp-leftarrow, .tp-rightarrow {
