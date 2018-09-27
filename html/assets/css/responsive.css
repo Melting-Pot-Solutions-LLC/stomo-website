@@ -1034,6 +1034,10 @@ h3.collapse-xs.active:after {
  .mar-bottom-less {
     margin-bottom: 15px;
 }
+     .first-slide .btn {
+        position: relative;
+        top: 10px;
+     }
      .second-slide .slider-text {
          white-space: normal !important;
          margin: 46px 0px 0px !important;
@@ -1041,5 +1045,16 @@ h3.collapse-xs.active:after {
      .second-slide .btn {
         position: relative;
         top: 50px;
+     }
+     .second-slide .as-low-as {
+         display: block;
+     }
+     .third-slide .slider-text {
+         white-space: normal !important;
+         margin: 66px 0px 0px !important;
+     }
+     .third-slide .btn {
+        position: relative;
+        top: 82px;
      }
 }
