@@ -1038,6 +1038,11 @@ h3.collapse-xs.active:after {
         position: relative;
         top: 10px;
      }
+     .first-slide .tp-header {
+        position: relative;
+        left: 43px;
+        width: 300px;
+     }
      .second-slide .slider-text {
          white-space: normal !important;
          margin: 46px 0px 0px !important;
