@@ -526,7 +526,13 @@
         
         $('.icon-back-in-time').on('click', backInTime);
         
+        if ($(window).width() <= 1040) {
+            $($(".pods-widget-section").detach()).insertBefore(".footer-section");
+        }
+        
     });
     // Delivery form script end
+    
+    
     
 })(jQuery);
