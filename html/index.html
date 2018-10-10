@@ -58,6 +58,7 @@
     <!-- all stylesheets include end -->
 
     <!-- Color Scheme css -->
+<!--
     <link rel="alternate stylesheet" type="text/css" href="assets/css/switcher/color-one.css" title="color-one" media="screen" />
     <link rel="alternate stylesheet" type="text/css" href="assets/css/switcher/color-two.css" title="color-two" media="screen" />
     <link rel="alternate stylesheet" type="text/css" href="assets/css/switcher/color-three.css" title="color-three" media="screen" />
@@ -68,24 +69,8 @@
     <link rel="alternate stylesheet" type="text/css" href="assets/css/switcher/color-eight.css" title="color-eight" media="screen" />
     <link rel="alternate stylesheet" type="text/css" href="assets/css/switcher/color-nine.css" title="color-nine" media="screen" />
     <link rel="alternate stylesheet" type="text/css" href="assets/css/switcher/color-ten.css" title="color-ten" media="screen" />
+-->
 
-    <!-- jquery latest version -->
-    <script src="assets/js/jquery-3.1.1.min.js"></script>
-
-    <!-- revolution slider js files start -->
-    <script src="assets/js/rev_slider/jquery.themepunch.tools.min.js"></script>
-    <script src="assets/js/rev_slider/jquery.themepunch.revolution.min.js"></script>
-
-    <script src="assets/js/rev_slider/extensions/revolution.extension.actions.min.js"></script>
-    <script src="assets/js/rev_slider/extensions/revolution.extension.carousel.min.js"></script>
-    <script src="assets/js/rev_slider/extensions/revolution.extension.kenburn.min.js"></script>
-    <script src="assets/js/rev_slider/extensions/revolution.extension.layeranimation.min.js"></script>
-    <script src="assets/js/rev_slider/extensions/revolution.extension.migration.min.js"></script>
-    <script src="assets/js/rev_slider/extensions/revolution.extension.navigation.min.js"></script>
-    <script src="assets/js/rev_slider/extensions/revolution.extension.parallax.min.js"></script>
-    <script src="assets/js/rev_slider/extensions/revolution.extension.slideanims.min.js"></script>
-    <script src="assets/js/rev_slider/extensions/revolution.extension.video.min.js"></script>
-    <!-- revolution slider js files end -->
 
 </head>
 
@@ -626,6 +611,25 @@
     </div>
 
     <!-- all js include start -->
+    
+    
+    <!-- jquery latest version -->
+    <script src="assets/js/jquery-3.1.1.min.js"></script>
+
+    <!-- revolution slider js files start -->
+    <script src="assets/js/rev_slider/jquery.themepunch.tools.min.js"></script>
+    <script src="assets/js/rev_slider/jquery.themepunch.revolution.min.js"></script>
+
+    <script src="assets/js/rev_slider/extensions/revolution.extension.actions.min.js"></script>
+    <script src="assets/js/rev_slider/extensions/revolution.extension.carousel.min.js"></script>
+    <script src="assets/js/rev_slider/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="assets/js/rev_slider/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="assets/js/rev_slider/extensions/revolution.extension.migration.min.js"></script>
+    <script src="assets/js/rev_slider/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="assets/js/rev_slider/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="assets/js/rev_slider/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="assets/js/rev_slider/extensions/revolution.extension.video.min.js"></script>
+    <!-- revolution slider js files end -->
 
     <!-- bootstrap latest version -->
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
@@ -664,7 +668,7 @@
                 $(formMessages).removeClass('alert-danger');
                 $(formMessages).addClass('alert-success');
                 $(formMessages).text('Thank You! Your message has been sent.');
-                backInTime();
+                $( ".icon-back-in-time" ).trigger( "click" );
             }
           }
           http.onerror = function() {

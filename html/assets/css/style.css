@@ -4447,17 +4447,6 @@ a.pods-button {
 .container-img {
     width: 100%;
 }
-/*
-.rev_slider .slotholder:after {
-	width: 60%;
-	height: 58%;
-	content: "";
-	position: absolute;
-	left: 100px;
-	top: 130px;
-	pointer-events: none;    
-	background: rgba(255, 255, 255, 0.7);
-}*/
 .third-slide .tp-bgimg {
     background-position: -100px center !important;
 }

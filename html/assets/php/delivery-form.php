@@ -18,7 +18,7 @@ if (isset ($_POST['txtEmail'])) {
     $email = $_POST['txtEmail'];
     $txtPromoCode = $_POST['txtPromoCode'];
     
-  $to = "masjaha88@gmail.com"; 
+  $to = "info@stomostorage.com"; 
   $subject = "New contact from website ".$_SERVER['HTTP_REFERER'];
     
     $message = "Which category fits you best? $whichCategoryFits \n";
